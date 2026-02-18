@@ -27,3 +27,31 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    text-align: center;
+}
+
+.card-img {
+    border: 2px solid blue;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+}
