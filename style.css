@@ -17,12 +17,17 @@ body {
 }
 
 .header {
+    background-color: var(--color-accent);
+    color: white;  
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-accent);
-    color: white;
-    padding: 10px;
     font-family: "Roboto", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .header-title h3 {
@@ -33,7 +38,7 @@ body {
 .header-links {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 4rem;
 }
 
 ul {
@@ -47,7 +52,7 @@ a {
 
 .hero-section {
     background-color: var(--color-accent);
-    width: 100%;
+    padding-bottom: 4rem;
 }
 
 .hero-content {
@@ -56,10 +61,10 @@ a {
     justify-content: center;
     align-items: center;
     color: var(--color-accent-text);
-    gap: 2rem;
-    padding-bottom: 5rem;
-    max-width: 1400px;
+    gap: 4rem;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .hero-text h1 {
@@ -70,6 +75,7 @@ a {
 
 .hero-text {
     display: flex;
+    flex: 1;
     flex-direction: column;
     color: var(--hero-secondary-text);
     font-size: 18px;
@@ -81,14 +87,21 @@ a {
     border: none;
     outline: none;
     border-radius: 8px;
-    padding: 1rem, 0;
-    max-width: 100px;
+    padding: 10px 30px;
+    max-width: 150px;
 }
 
 .hero-img {
-    width: 400px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 250px;
     background-color: gray;
+}
+
+.hero-img p {
+    text-align: center;
 }
 
 .card-section {
@@ -96,7 +109,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    padding: 60px 0;
 }
 
 .card-section h2 {
@@ -107,7 +120,9 @@ a {
 .card-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
 }
 
 .card {
@@ -125,11 +140,21 @@ a {
 }
 
 .quote-section {
-    background-color: var(--quote-section-bg);
+    background-color: var(--hero-secondary-text);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: end;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
 }
 
 .quote {
@@ -137,17 +162,19 @@ a {
     font-weight: 300;
     color: var(--color-accent);
     font-style: italic;
-    max-width: 1000px;
+    height: auto;
 }
 
 .citation {
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: right;
+    align-self: flex-end;
 }
 
 .cta-section {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
 }
 
 .cta-box {
@@ -156,8 +183,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    max-width: 1400px;
+    padding: 3rem 6rem;
+    border-radius: 10px;
+    gap: 3rem;
 }
 
 .cta-text {
