@@ -81,6 +81,12 @@ a {
     font-size: 18px;
 }
 
+.hero-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 .hero-btn {
     background-color: var(--hero-btn-color);
     color: var(--color-accent-text);
@@ -89,6 +95,12 @@ a {
     border-radius: 8px;
     padding: 10px 30px;
     max-width: 150px;
+}
+
+.hero-btn svg {
+    height: 24px;
+    width: 24px;
+    fill: currentColor;
 }
 
 .hero-img {
